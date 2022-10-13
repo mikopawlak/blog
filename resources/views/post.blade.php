@@ -5,6 +5,8 @@
 <li><span>&nbsp {{ $data->content }}</span></li>
 @auth
 <li>&nbsp</li>
-<li><a class="green" href="../edit/{{ $data->id }}">[ edit ] </a></li>   
+@if(Auth::user()->type == 1 || Auth::user()->type == 2 )
+<li><a class="green" href="../edit/{{ $data->id }}">[ edit ] </a></li>  
+@endif
 @endauth
 @endsection

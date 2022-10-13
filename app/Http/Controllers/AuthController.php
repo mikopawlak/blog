@@ -37,7 +37,7 @@ class AuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
          
-        return redirect("dash")->withSuccess('You have signed-in');
+        return redirect("/")->withSuccess('Account registered. You can now sign in!');
     }
 
     public function create(array $data)

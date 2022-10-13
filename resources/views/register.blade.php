@@ -8,6 +8,7 @@
     <li><input type="text" placeholder="Email" id="email" class="form-control" name="email" required autofocus></li>
     <li><input type="password" placeholder="Password" id="password" class="form-control" name="password" required></li>
     <div class="form-group mb-3">
+    <li>&nbsp</li>
     <li><button type="submit" class="btn btn-dark btn-block">Register</button></li>
 </form>
 @endsection

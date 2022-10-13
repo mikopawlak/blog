@@ -9,6 +9,7 @@
     <div class="container-fluid">
         <div class="console">
             <ul class="console-list">
+                
                 <li><a class="red" href="/blog/public">[ console blog ] </a><a></a>@ @yield('page')</a></li>
                 @auth
                 <li>> Logged as: {{ Auth::user()->name }} </li>   
@@ -19,7 +20,7 @@
                     @case(2) Admin @break
                 @endswitch
                 </li>   
-                
+                <li><a class="blue">{{ session('success') }}</a></li>
                 <li>@if(Auth::user()->type == 1 || Auth::user()->type == 2) <a class="green" href="/blog/public/new">[ new post ] </a>@endif
                     @if(Auth::user()->type == 2) <a class="green" href="/blog/public/permissions">[ users ] </a>@endif
                     <a class="red" href="/blog/public/logout">[ logout ]</a></li>

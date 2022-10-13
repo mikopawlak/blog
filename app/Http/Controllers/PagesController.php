@@ -9,7 +9,7 @@ use App\Models\User;
 class PagesController extends Controller
 {
     function listAllPosts() {
-        $data = Post::all();
+        $data = Post::paginate(10);
         return view('list_posts',compact('data'));
     }
     function showPost($id) {

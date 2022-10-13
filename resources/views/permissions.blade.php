@@ -22,6 +22,4 @@ User Permissions
 </li>
 </form>
 @endforeach
-<li>&nbsp</li>
-<li>{{ session('success') }}</li>
 @endsection

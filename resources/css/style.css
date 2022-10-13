@@ -46,6 +46,22 @@ a:hover {
     color: red;
 }
 
+nav {
+    color: #000;
+}
+
+.pagination {
+    --bs-pagination-bg: #000;
+    --bs-pagination-disabled-bg: #000;
+    --bs-pagination-active-bg: #74747479;
+    --bs-pagination-active-border-color: #ffffff;
+    --bs-pagination-border-radius: 0px;
+}
+
+.small {
+    font-size: 16px;
+}
+
 textarea {
     width: 100%;
     min-height: 350px;
