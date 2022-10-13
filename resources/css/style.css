@@ -1,0 +1,79 @@
+body {
+    font-family: consolas, monospace;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.console {
+    font-size: 24px;
+    /*border: 1px solid #fff;*/
+    height: 80%;
+    overflow: auto;
+    margin: 30px;
+}
+
+.form-control {
+    width: 30%;
+    background: none;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.form-control:focus {
+    background: none;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.console-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.console-list li {
+    margin-top: 5px;
+}
+
+a, a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+textarea {
+    width: 100%;
+    min-height: 350px;
+}
+
+.edit-textarea {
+    background: none;
+    color: #fff;
+    padding: 30px;
+}
+
+.btn-console {
+    background: none;
+    border: 0px;
+}
+
+.btn-console:hover {
+    color: #fff;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
