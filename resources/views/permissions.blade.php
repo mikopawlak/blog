@@ -8,6 +8,8 @@ User Permissions
 @extends('index')
 @section('content')
 <li>&nbsp</li>
+@auth
+@if(Auth::User()->type==2)
 @foreach($data as $user)
 <form method="POST" action="{{ route('grant') }}">
 @csrf
@@ -22,4 +24,6 @@ User Permissions
 </li>
 </form>
 @endforeach
+@endif
+@endauth
 @endsection
